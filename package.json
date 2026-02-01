@@ -1,0 +1,50 @@
+{
+  "name": "react-minimal-pdf-viewer",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && cpx \"src/style/**/*\" dist/style",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hari0701/react-minimal-pdf-viewer.git"
+  },
+  "description": "Minimal standalone PDF viewer for React — no highlights, no annotations, just renders PDFs. Customizable parameters.",
+  "keywords": [
+    "react",
+    "pdf",
+    "viewer",
+    "pdfjs",
+    "minimal",
+    "component"
+  ],
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "lodash.debounce": "^4.0.8"
+  },
+  "devDependencies": {
+    "@types/lodash.debounce": "^4.0.9",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.1.2",
+    "cpx": "^1.5.0",
+    "pdfjs-dist": "^5.4.530",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "typescript": "^5.9.2",
+    "vite": "^7.3.1"
+  },
+  "peerDependencies": {
+    "pdfjs-dist": "^5.0.0",
+    "react": "^19.1.2",
+    "react-dom": "^19.1.2"
+  }
+}
