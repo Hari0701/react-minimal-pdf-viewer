@@ -123,6 +123,29 @@ Renders the loaded PDF document.
 | `style` | `CSSProperties` | - | Inline styles for the viewer container. |
 | `className` | `string` | - | CSS class for the viewer container. |
 
+## Styling
+
+You can style the viewer by passing a `className` or `style` prop. The component uses standard PDF.js class names, so you can target internal elements easily.
+
+```css
+/* Example CSS */
+.my-viewer-class {
+  background-color: #333; /* Dark background */
+}
+
+/* Target internal pages */
+.my-viewer-class .page {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+```
+
+```tsx
+<PdfViewer 
+  document={doc} 
+  className="my-viewer-class" 
+/>
+```
+
 ## License
 
 ISC
